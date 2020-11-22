@@ -3,7 +3,7 @@ import {Route} from "react-router-dom";
 // import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'reactstrap';
-import Navbar from "./components/navbar";
+import Navbar from "./components/navbar.js";
 import Frontpage from "./components/frontpage";
 import Contact from "./components/contact";
 import Portfolio from "./components/portfolio";
