@@ -25,7 +25,7 @@ const items = [
   }
 ];
 
-const POrtfolio = (props) => {
+const Portfolio = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -73,4 +73,4 @@ const POrtfolio = (props) => {
   );
 }
 
-export default POrtfolio;
+export default Portfolio;
