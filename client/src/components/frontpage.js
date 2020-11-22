@@ -3,6 +3,9 @@ import React from "react";
 
 // import './style.css';
 
+import photo from "../img/Jon3.jpg";
+import github from "../icons/githubLogo5.png";
+
 class Frontpage extends React.Component {
 
 render() {
@@ -16,7 +19,7 @@ render() {
             <p>I grew up in Tucson, and studied at the University of Arizona. Much of my professional life has been spent in restaurants serving, bartending, and managing. I moved to Chicago in 2012, and I'm currently studying full stack development at Northwestern University.</p>
           </div>
            <div className="col">
-            <img src="../img/Jon3.jpg" className="img-fluid img-thumbnail rounded-circle" alt="Jon"/>
+            <img src={photo} className="img-fluid img-thumbnail rounded-circle" alt="Jon"/>
             <a target="_blank" id="resume" href="./assets/MISNERresume2020.pdf">Resume</a>
            </div> 
       </div>
@@ -24,7 +27,7 @@ render() {
       <hr className="my-4"/>
       <div className="row">
         <div className="col">
-          <img src="../icons/githubLogo5.png" alt="icon" className="img-fluid"/>
+          <img src={github} alt="icon" className="img-fluid"/>
         </div>
         <div className="col">
           <img src="../icons/githubLogo5.png" alt="icon" className="img-fluid"/>
