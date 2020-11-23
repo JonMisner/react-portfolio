@@ -7,22 +7,51 @@ import {
   CarouselCaption
 } from 'reactstrap';
 
+import fitup from "../img/FitUP.png";
+import budgetTracker from "../img/budgetTracker.png";
+import informedTrades from '../img/informedTrades.png'
+import fitnessTracker from '../img/fitnessTracker.png';
+import myTeam from '../img/myTeam.png';  
+import workDayPlanner from '../img/workDayPlanner.png';
+import "../styles/portfolio.css";
+
 const items = [
   {
-    src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa1d%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa1d%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.921875%22%20y%3D%22218.3%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
-    altText: 'Slide 1',
-    caption: 'Slide 1'
+    src: fitup,
+    altText: 'FitUp',
+    caption: 'FitUp App',
+    header: "FitUp Github"
   },
   {
-    src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa20%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa20%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3203125%22%20y%3D%22218.3%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
-    altText: 'Slide 2',
-    caption: 'Slide 2'
-  },
-  {
-    src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa21%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa21%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
-    altText: 'Slide 3',
-    caption: 'Slide 3'
-  }
+   src: budgetTracker,
+   altText: 'Budget Tracker',
+   caption: 'Budget Tracker App',
+   header: "Budget Tracker Github"
+ },
+ {
+   src: informedTrades,
+   altText: 'Informed Trades',
+   caption: 'Informed Trades App',
+   header: "Informed Trades Github"
+ },
+ {
+   src: fitnessTracker,
+   altText: 'Fitness Tracker',
+   caption: 'Fitness Tracker App',
+   header: "Fitness Tracker Github"
+ },
+ {
+   src: myTeam,
+   altText: 'Team Builder',
+   caption: 'Team Builder App',
+   header: "Team Builder Github"
+ },
+ {
+   src: workDayPlanner,
+   altText: 'Workday Planner',
+   caption: 'Workday Planner App',
+   header: "Workday Planner Github"
+ },
 ];
 
 const Portfolio = (props) => {
@@ -49,18 +78,23 @@ const Portfolio = (props) => {
   const slides = items.map((item) => {
     return (
       <CarouselItem
+        data-interval="7000"
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+        <img className="slides"src={item.src} alt={item.altText} />
+       
+        <CarouselCaption className="captions" captionText={item.caption}  />
+        <CarouselCaption className="captionHeader" captionHeader={item.header} />
+        
       </CarouselItem>
     );
   });
 
   return (
     <Carousel
+      data-interval="7000"
       activeIndex={activeIndex}
       next={next}
       previous={previous}

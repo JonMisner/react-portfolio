@@ -1,0 +1,35 @@
+.slides {
+   max-width: 1200px;
+   max-height: 800px;
+}
+
+.captions {
+   /* color: #2d3e50; */
+   color: rgb(0, 208, 179);
+   margin-bottom: 2em;
+   font-weight: 700;
+   font-size: 200%;
+   -webkit-text-stroke-width: .5px;
+   -webkit-text-stroke-color: #2d3e50c2;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+   height: 75px;
+   width: 75px;
+   outline: 2d3e50;
+   /* background-color: #1f8dd6; */
+   background-color: rgb(80,114,249);
+   background-size: 100%, 100%;
+   border-radius: 50%;
+   border: 2px solid 2d3e50;
+}
+
+.captionHeader {
+   color: #2d3e50;
+   /* color: rgb(0, 208, 179); */
+   margin-bottom: 0em;
+   font-weight: 800;
+   font-size: 300%;
+   -webkit-text-stroke-width: .5px;
+   -webkit-text-stroke-color: rgba(65, 65, 65, 0.151);
+}
