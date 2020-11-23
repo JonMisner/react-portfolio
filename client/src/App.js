@@ -7,6 +7,7 @@ import Navbar from "./components/navbar.js";
 import Frontpage from "./components/frontpage";
 import Contact from "./components/contact";
 import Portfolio from "./components/portfolio";
+import Resume from "./components/resume.js";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route exact path="/" component={Frontpage} />
             <Route path="/portfolio" component={Portfolio} />
             <Route path="/contact" component={Contact} />
+            <Route path="/resume" component={Resume} />
           </Container>
       </div>
   );

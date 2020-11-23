@@ -42,11 +42,11 @@ const Contact = (props) => {
                             <Row>
                                 {/* <Col xs="5"><img className="headshot shadow bg-white rounded mt-3" src={headshot} alt="Headshot"/></Col> */}
                                 <Col className="text-Left m-3">
-                                    <CardTitle className="lead text-center font-weight-bold">Software Engineer</CardTitle>
+                                    <CardTitle className="lead text-center font-weight-bold">Full Stack Developer</CardTitle>
                                     <hr className="m-3" />
-                                    <NavLink href="mailto:Joseph.Young.Dev@gmail.com"><img className="logo" src={emailLogo} alt="Logo"/> : Joseph Young</NavLink>
-                                    <NavLink href="https://www.linkedin.com/in/joe-young-8a499a18a/"><img className="logo" src={linkedinLogo} alt="Logo"/> : Joseph Young</NavLink>
-                                    <NavLink href="https://github.com/JYoung32"><img className="logo" src={githubLogo} alt="Logo"/> : JYoung32</NavLink>                
+                                    <NavLink href="mailto:jonmisner.developer@gmail.com"><img className="logo" src={emailLogo} alt="Logo"/> : Jon Misner</NavLink>
+                                    <NavLink href="https://www.linkedin.com/in/joe-young-8a499a18a/"><img className="logo" src={linkedinLogo} alt="Logo"/> : Jon Misner</NavLink>
+                                    <NavLink href="https://github.com/JYoung32"><img className="logo" src={githubLogo} alt="Logo"/> : JonMisner</NavLink>                
                                 </Col>
                             </Row>
                         </CardBody>

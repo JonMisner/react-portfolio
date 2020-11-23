@@ -20,13 +20,18 @@ const Navigation = (props) => {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/contact">
-                Contact
+              <NavLink href="/portfolio">
+                Portfolio
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/portfolio">
-                Portfolio
+              <NavLink href="/resume">
+                Resume
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/contact">
+                Contact
               </NavLink>
             </NavItem>
           </Nav>
