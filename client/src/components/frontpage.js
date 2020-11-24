@@ -16,7 +16,7 @@ class Frontpage extends React.Component {
 
 render() {
    return (
-      <body className="jumbotron mt-3"> 
+      <main className="jumbotron mt-3"> 
       <div className="row">
           <div className="col-9">
             <h1 className="display-4">Jon Misner</h1>
@@ -60,7 +60,7 @@ render() {
         </div>
       </div>
        
-    </body>
+    </main>
    )
 }
 }
