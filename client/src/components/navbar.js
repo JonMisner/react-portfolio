@@ -11,7 +11,7 @@ const Navigation = (props) => {
 
   return (
       <Navbar color="light" light expand="md" className="sticky-top">
-        <NavbarBrand className="ml-3">JM</NavbarBrand>
+        <NavbarBrand className="ml-3 jm">JM</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>

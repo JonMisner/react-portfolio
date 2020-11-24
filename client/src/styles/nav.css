@@ -1,4 +1,4 @@
-ml-3 navbar-brand {
-   color: #3385c6;
+.ml-3 {
+   color: #3385c6 !important;
    font-weight: 900;
 }
