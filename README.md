@@ -17,10 +17,10 @@
   * [Contact Information](#email)
   * [License](#license)
 ***
-![Test Image 1](./assets/img/wideView.png)
-![Test Image 1](./assets/img/smallView.png)
-![Test Image 1](./assets/img/wideView.png)
-![Test Image 1](./assets/img/smallView.png)
+![Test Image 1](./client/src/img/portFrontpage.png)
+![Test Image 1](./client/src/img/portfolio.png)
+![Test Image 1](./client/src/img/portResume.png)
+![Test Image 1](./client/src/img/portContact.png)
 ***
 
   ## Installation
@@ -35,11 +35,14 @@
 ***
   ## Contributors
 
-     Created By Jon Misner, with help from Kathleen Misner
+     Created By Jon Misner, 
+     with help from Kathleen Misner
 ***
   ## Contact Information
 
-     JonMisner on Github or jonmisner.developer@gmail.com
+      JonMisner on Github 
+      or 
+      jonmisner.developer@gmail.com
 ***
     ### License: MIT
 ***  
