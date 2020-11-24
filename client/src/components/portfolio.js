@@ -4,7 +4,8 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption
+  CarouselCaption,
+  NavLink
 } from 'reactstrap';
 
 import fitup from "../img/FitUP.png";
@@ -12,45 +13,58 @@ import budgetTracker from "../img/budgetTracker.png";
 import informedTrades from '../img/informedTrades.png'
 import fitnessTracker from '../img/fitnessTracker.png';
 import myTeam from '../img/myTeam.png';  
-import workDayPlanner from '../img/workDayPlanner.png';
+import foundationPortfolio from '../img/wideView.png';
 import "../styles/portfolio.css";
+
 
 const items = [
   {
     src: fitup,
     altText: 'FitUp',
-    caption: 'FitUp App',
-    header: "FitUp Github"
+    caption: '|FitUp on Github|',
+    header: "FitUp",
+    href: "http://project-two-2020.herokuapp.com/",
+    github: "https://github.com/JonMisner/FitUp"
   },
   {
    src: budgetTracker,
    altText: 'Budget Tracker',
-   caption: 'Budget Tracker App',
-   header: "Budget Tracker Github"
+   caption: '|Budget Tracker on Github|',
+   header: "Budget Tracker",
+   href: "https://jm-budget-tracker.herokuapp.com/",
+   github: "https://github.com/JonMisner/pwaBudgetTracker"
  },
  {
    src: informedTrades,
    altText: 'Informed Trades',
-   caption: 'Informed Trades App',
-   header: "Informed Trades Github"
+   caption: '|Informed Trades on Github|',
+   header: "Informed Trades",
+   href: "https://github.com/JonMisner/Informed_Trades",
+   github: "https://jonmisner.github.io/Informed_Trades/"
  },
  {
    src: fitnessTracker,
-   altText: 'Fitness Tracker',
-   caption: 'Fitness Tracker App',
-   header: "Fitness Tracker Github"
+   altText: 'Workout Tracker',
+   caption: '|Workout Tracker on Github|',
+   header: "Workout Tracker",
+   href: "https://workout-jm.herokuapp.com/",
+   github: "https://github.com/JonMisner/workoutTracker"
  },
  {
    src: myTeam,
    altText: 'Team Builder',
-   caption: 'Team Builder App',
-   header: "Team Builder Github"
+   caption: '|Team Builder on Github|',
+   header: "Team Builder",
+   href: "https://github.com/JonMisner/teamProfileGenerator",
+   github: "https://github.com/JonMisner/teamProfileGenerator"
  },
  {
-   src: workDayPlanner,
-   altText: 'Workday Planner',
-   caption: 'Workday Planner App',
-   header: "Workday Planner Github"
+   src: foundationPortfolio,
+   altText: 'Foundation Portfolio',
+   caption: '|Single Page Foundation Portfolo on Github|',
+   header: "Workday Planner",
+   href: "https://jonmisner.github.io/singlePagePortfolio/",
+   github: "https://github.com/JonMisner/singlePagePortfolio"
  },
 ];
 
@@ -83,11 +97,13 @@ const Portfolio = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img className="slides"src={item.src} alt={item.altText} />
-       
-        <CarouselCaption className="captions" captionText={item.caption}  />
-        <CarouselCaption className="captionHeader" captionHeader={item.header} />
-        
+         <NavLink href={item.href} target="_blank">
+         <img className="slides"src={item.src} alt={item.altText} href={item.href} />
+         </NavLink>
+         
+         <NavLink href={item.github} target="_blank">
+         <CarouselCaption className="captions" captionText={item.caption}  />
+         </NavLink>
       </CarouselItem>
     );
   });

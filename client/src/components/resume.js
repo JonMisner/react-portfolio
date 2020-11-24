@@ -1,7 +1,6 @@
 import React from "react";
 import resume from "./MISNERresume2020.pdf";
-// import { Document, Page } from 'react-pdf';
-// import { Jumbotron } from "reactstrap";
+import "../styles/app.css"
 
 class Resume extends React.Component {
 

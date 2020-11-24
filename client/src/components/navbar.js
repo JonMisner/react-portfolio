@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {
   Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink
 } from 'reactstrap';
+import "../styles/nav.css";
 
 const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);

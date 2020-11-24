@@ -1,0 +1,18 @@
+.logo {
+   max-width: 50px;
+   max-height: 50px;
+}
+body{ 
+   background-color: #3385c6;
+   color: white;
+   min-width: 1250px;
+   min-height: 750px;
+}
+
+.cardHeader {
+   background-color: #49657b;
+}
+
+.cardBody {
+   background-color: #4279a3 ;
+}

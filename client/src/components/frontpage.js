@@ -1,16 +1,22 @@
 import React from "react";
-// import { Jumbotron, Row, Col } from 'reactstrap';
-
-// import './style.css';
-
 import photo from "../img/Jon3.jpg";
 import github from "../icons/githubLogo5.png";
+import MySQL from "../icons/mysqlLogo.png";
+import node from "../icons/nodeLogo3.png";
+import passport from "../icons/passportjsLogo.png"
+import reactLogo from '../icons/reactLogo.png';
+import foundationLogo from '../icons/foundationLogo.png';
+import bulma from '../icons/bulmaLogo.png';
+import mongoDB from '../icons/mongo3Logo.png';
+import express from '../icons/expressLogo2.png';
+import "../styles/app.css";
+import "../styles/frontpage.css";
 
 class Frontpage extends React.Component {
 
 render() {
    return (
-      <main className="jumbotron mt-3"> 
+      <body className="jumbotron mt-3"> 
       <div className="row">
           <div className="col-9">
             <h1 className="display-4">Jon Misner</h1>
@@ -20,7 +26,6 @@ render() {
           </div>
            <div className="col">
             <img src={photo} className="img-fluid img-thumbnail rounded-circle" alt="Jon"/>
-            {/* <a target="_blank" id="resume" href="./assets/MISNERresume2020.pdf">Resume</a> */}
            </div> 
       </div>
       <h4 className="subtitle">Familiar With</h4>
@@ -30,32 +35,32 @@ render() {
           <img src={github} alt="icon" className="img-fluid"/>
         </div>
         <div className="col">
-          <img src="../icons/githubLogo5.png" alt="icon" className="img-fluid"/>
+          <img src={MySQL} alt="icon" className="img-fluid"/>
         </div>
         <div className="col">
-          <img src="../icons/githubLogo5.png" alt="icon" className="img-fluid"/>
+          <img src={node} alt="icon" className="img-fluid node"/>
         </div>
         <div className="col">
-          <img src="../icons/githubLogo5.png" alt="icon" className="img-fluid"/>
+          <img src={passport} alt="icon" className="img-fluid"/>
         </div>
         <div className="col">
-          <img ssrc="../icons/githubLogo5.png" alt="icon" className="img-fluid"/>
+          <img src={foundationLogo} alt="icon" className="img-fluid"/>
         </div>
         <div className="col">
-          <img src="../icons/githubLogo5.png" alt="icon" className="img-fluid"/>
+          <img src={bulma} alt="icon" className="img-fluid bulma"/>
         </div>
         <div className="col">
-          <img src="../icons/githubLogo5.png" alt="icon" className="img-fluid"/>
+          <img src={mongoDB} alt="icon" className="img-fluid"/>
         </div>
         <div className="col">
-          <img src="../icons/githubLogo5.png" alt="icon" className="img-fluid"/>
+          <img src={express} alt="icon" className="img-fluid express"/>
         </div>
         <div className="col">
-          <img ssrc="../icons/githubLogo5.png" alt="icon" className="img-fluid"/>
+          <img src={reactLogo} alt="icon" className="img-fluid"/>
         </div>
       </div>
        
-    </main>
+    </body>
    )
 }
 }

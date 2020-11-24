@@ -6,11 +6,12 @@
 .captions {
    /* color: #2d3e50; */
    color: rgb(0, 208, 179);
-   margin-bottom: 2em;
-   font-weight: 700;
+   margin-bottom: -0.7em;
+   font-weight: 800;
    font-size: 200%;
-   -webkit-text-stroke-width: .5px;
-   -webkit-text-stroke-color: #2d3e50c2;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: rgb(1, 97, 84);
+   background-color: rgba(255, 255, 255, 0.041)
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -32,4 +33,22 @@
    font-size: 300%;
    -webkit-text-stroke-width: .5px;
    -webkit-text-stroke-color: rgba(65, 65, 65, 0.151);
+   background-color: rgba(255, 255, 255, 0.048)
+}
+
+.carousel-item > img { 
+   width: 100%;
+   height: 100%;
+   opacity: 95%; 
+ }
+
+ .carousel-indicators-activeIndex-icon {
+    color: rgb(0, 208, 179);
+ }
+
+ body{ 
+   background-color: #3385c6;
+   color: white;
+   min-width: 1250px;
+   min-height: 750px;
 }

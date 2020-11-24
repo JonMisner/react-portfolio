@@ -1,6 +1,6 @@
 import React from "react";
 import {Route} from "react-router-dom";
-// import './App.css';
+import './styles/app.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'reactstrap';
 import Navbar from "./components/navbar.js";
