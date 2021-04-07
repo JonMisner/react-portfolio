@@ -10,9 +10,9 @@ const Navigation = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-      <Navbar color="light" light expand="md" className="sticky-top">
+      <Navbar color="light" light expand="md" className="sticky-top clear-fix">
         <NavbarBrand className="ml-3 jm">JM</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler id="toggler" onClick={toggle} className="btn float-left"/>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
