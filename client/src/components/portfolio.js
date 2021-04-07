@@ -13,7 +13,7 @@ import budgetTracker from "../img/budgetTracker.png";
 import informedTrades from '../img/informedTrades.png'
 import fitnessTracker from '../img/fitnessTracker.png';
 import myTeam from '../img/myTeam.png';  
-import foundationPortfolio from '../img/wideView.png';
+import dynamicWines from '../img/dynamicWines.png';
 import "../styles/portfolio.css";
 
 
@@ -59,12 +59,12 @@ const items = [
    github: "https://github.com/JonMisner/teamProfileGenerator"
  },
  {
-   src: foundationPortfolio,
-   altText: 'Foundation Portfolio',
-   caption: '|Single Page Foundation Portfolo on Github|',
-   header: "Workday Planner",
-   href: "https://jonmisner.github.io/singlePagePortfolio/",
-   github: "https://github.com/JonMisner/singlePagePortfolio"
+  src: dynamicWines,
+  altText: "Dynamic Wines",
+  caption: "|Dynamic Wines on Github|",
+  header: "Dynamic Winelist",
+  href: "https://dynamic-wines.herokuapp.com/",
+  github: "https://github.com/JonMisner/dynamicwines2",
  },
 ];
 
